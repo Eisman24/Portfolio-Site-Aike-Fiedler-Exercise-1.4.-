@@ -7,6 +7,10 @@ Action Colour (Red): #B20000;
 Primary color on black (White): #FFFFFF
 */
 
+* {
+  box-sizing: border-box;
+}
+
 /*
 Fonts and headings
 */
@@ -109,4 +113,209 @@ a:active {
   */
 img {
   width: 100%;
+}
+
+pan {
+  display: block;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(46, 48, 46, 0.5);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(46, 48, 46, 0.5);
+  box-shadow: 0px 1px 2px 0px rgba(46, 48, 46, 0.5);
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-filled {
+  background: #F4F4F4;
+  padding: 20px;
+}
+
+.button-wrapper {
+  margin: 30px 0;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header>a {
+  line-height: 0 !important;
+}
+
+header>.container>a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #B20000 !important;
+}
+
+nav>ul>li>a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+nav>ul>li>a:active {
+  opacity: 0.8;
+}
+
+main {
+  padding-top: 133px;
+}
+
+footer {
+  background-color: #050B4B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 0;
+  margin: 25px auto 0 auto;
+  width: 100%;
+}
+
+footer>.container>p>a {
+  color: #FFFFFF !important;
+  font-weight: 700;
+}
+
+footer>.container>p>a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+footer>.container>p>a:active {
+  opacity: 0.8;
+}
+
+svg.icon {
+  fill: #FFFFFF;
+}
+
+svg.icon:hover {
+  fill: #050B4B;
+  transition: 0.3s fill;
+}
+
+svg.animated {
+  max-width: 100%;
+}
+
+.icon {
+  max-width: 50px;
+}
+
+.social {
+  margin: 30px auto;
+}
+
+/*
+Home Page - index.html
+*/
+#hero {
+  background-color: #050B4B;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero h1 {
+  color: #FFFFFF;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#hero p {
+  color: #FFFFFF;
+}
+
+#hero .container {
+  max-width: 1000px;
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+#work h2 {
+  margin: 1.5em;
+}
+
+#work h3 {
+  margin-top: 0;
+}
+
+/*
+About Me - about.html
+*/
+#aboutMe h2 {
+  margin: 0;
+}
+
+#aboutMe .row {
+  padding-bottom: 15px;
+}
+
+#aboutMe .button {
+  text-align: center !important;
+}
+
+/*
+Project1 - userresearch.html
+*/
+#userPersonas .step {
+  padding-bottom: 25px;
+  padding-top: 41px;
+}
+
+#conclusion {
+  padding-bottom: 25px;
+}
+
+#aboutMe .button-wrapper {
+  text-align: center;
 }
