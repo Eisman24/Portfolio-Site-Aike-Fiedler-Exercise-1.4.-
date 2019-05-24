@@ -1,12 +1,9 @@
-
-
 /*
 Colors used:
 Primary colour on white (Blue): #050B4B;
 Action Colour (Red): #B20000;
 Primary color on black (White): #FFFFFF
 */
-
 * {
   box-sizing: border-box;
 }
@@ -319,3 +316,159 @@ Project1 - userresearch.html
 #aboutMe .button-wrapper {
   text-align: center;
 }
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 3s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*
+Medium devices (640px and larger)
+*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  main {
+    padding-top: 79px;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    text-align: left;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #me .button-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container-filled {
+    padding: 20px;
+  }
+}
+
+/*
+Large devices (1024px or larger)
+*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-8 {
+    width: 66.66%;
+    padding: 0 80px 0 0;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+    padding-top: 0;
+    padding-right: 30px;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+    padding-top: 0;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+    float: left;
+    padding: 0 0 0 20px;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+    padding: 0 80px 0 0;
+  }
+
+  .col-lg-skills {
+    padding: 0;
+    margin: 0;
+  }
+
+  .row-lg-skills {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  #me h2 {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+
+  #me h3 {
+    margin-top: 0;
+  }
+
+  #me .button-wrapper {
+    text-align: left;
+  }
+
+  #me .col-lg-5 {
+    width: 41.66%;
+    float: left;
+    padding: 0;
+  }
+
+  #me .container-filled {
+    background: #F4F4F4;
+    padding: 20px;
+  }
