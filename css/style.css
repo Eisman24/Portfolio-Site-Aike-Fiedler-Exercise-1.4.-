@@ -118,7 +118,6 @@ pan {
 
 header {
   background-color: #ffffff;
-  text-align: center;
   padding: 10px 0;
   margin: auto;
   position: fixed;
@@ -168,18 +167,39 @@ header>.container>a {
   display: inline;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
@@ -200,7 +220,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 85px;
 }
 
 footer {
@@ -366,7 +386,7 @@ Project1 - userresearch.html
 /*
 Medium devices (640px and larger)
 */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
   }
@@ -374,6 +394,31 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
   }
 
   main {
@@ -472,3 +517,4 @@ Large devices (1024px or larger)
     background: #F4F4F4;
     padding: 20px;
   }
+}
