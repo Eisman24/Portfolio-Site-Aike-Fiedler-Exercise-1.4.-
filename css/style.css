@@ -170,6 +170,7 @@ header>.container>a {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -268,12 +269,17 @@ svg.animated {
   margin: 30px auto;
 }
 
+.paddedImg {
+  float: left;
+  margin-top: 30px;
+}
+
 /*
 Home Page - index.html
 */
 #hero {
   background-color: #050B4B;
-  padding: 20px 0;
+  padding: 100px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -417,7 +423,7 @@ Medium devices (640px and larger)
   }
 
   .navtoggle.responsive li {
-    padding: 0;
+    padding: 10;
     border-top: none;
   }
 
